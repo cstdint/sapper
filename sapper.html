@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang = "ru">
+	<head>
+		<meta charset = "utf-8">
+		<link rel = "stylesheet" type = "text/css" href = "sapper.css">
+		<title>Сапёр</title>
+	</head>
+	<body>
+		<div class = "logic-block">
+			<div class = "range" id = "range-width">
+				<div class = "range-row">
+					<div class = "range-cell range-cell-00">
+						Ширина:
+					</div><div class = "range-cell range-cell-01">
+					<input type = "range" min = "2" max = "100" step = "1" value = "20">
+					</div><div class = "range-cell range-cell-02">
+						
+					</div>
+				</div>
+				<div class = "range-row">
+					<div class = "range-cell range-cell-10">
+						
+					</div><div class = "range-cell range-cell-11">
+						left
+					</div><div class = "range-cell range-cell-12">
+						
+					</div><div class = "range-cell range-cell-13">
+						right
+					</div><div class = "range-cell range-cell-14">
+						
+					</div>
+				</div>
+			</div>
+			<div class = "range" id = "range-height">
+				<div class = "range-row">
+					<div class = "range-cell range-cell-00">
+						Высота:
+					</div><div class = "range-cell range-cell-01">
+					<input type = "range" min = "2" max = "100" step = "1" value = "10">
+					</div><div class = "range-cell range-cell-02">
+						
+					</div>
+				</div>
+				<div class = "range-row">
+					<div class = "range-cell range-cell-10">
+						
+					</div><div class = "range-cell range-cell-11">
+						left
+					</div><div class = "range-cell range-cell-12">
+						
+					</div><div class = "range-cell range-cell-13">
+						right
+					</div><div class = "range-cell range-cell-14">
+						
+					</div>
+				</div>
+			</div>
+			<div class = "range" id = "range-bombs">
+				<div class = "range-row">
+					<div class = "range-cell range-cell-00">
+						Число мин:
+					</div><div class = "range-cell range-cell-01">
+					<input type = "range" min = "1" max = "199" step = "1" value = "25">
+					</div><div class = "range-cell range-cell-02">
+						
+					</div>
+				</div>
+				<div class = "range-row">
+					<div class = "range-cell range-cell-10">
+						
+					</div><div class = "range-cell range-cell-11">
+						left
+					</div><div class = "range-cell range-cell-12">
+						
+					</div><div class = "range-cell range-cell-13">
+						right
+					</div><div class = "range-cell range-cell-14">
+						
+					</div>
+				</div>
+			</div>
+			<p><button type = "button" id = "button-new">Новая игра</button></p>
+		</div>
+		<div class = "logic-block">
+			<p>Время: <em><span id = "timer-id"></span></em></p>
+			<p>Мин осталось: <em><span id = "bombs-id"></span></em></p>
+		</div>
+		
+		
+		<canvas id = "canvas-id"></canvas>
+		<script defer src = "sapper.js"></script>
+	</body>
+</html>
